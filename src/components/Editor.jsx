@@ -1,4 +1,6 @@
 import React from "react";
+import darkCode from "../../assets/code-dark.png";
+import lightCode from "../../assets/code-light.png";
 
 const Editor = () => {
   return (
@@ -21,12 +23,12 @@ const Editor = () => {
         {/* Editor-content */}
         <div className="h-56 md:h-64 lg:h-60 xl:h-72 rounded-lg bg-neutral-100 dark:bg-neutral-800 overflow-hidden relative">
           <img
-            src="./assets/code-light.png"
+            src={lightCode}
             alt="Code snippets"
             className="w-full h-full object-cover object-left-top dark:hidden"
           />
           <img
-            src="./assets/code-dark.png"
+            src={darkCode}
             alt="Code snippets"
             className="w-full h-full object-cover object-left-top dark:block"
           />
